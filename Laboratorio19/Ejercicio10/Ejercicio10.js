@@ -6,18 +6,15 @@ async function obtenerPokemon(id) {
         const data = await res.json();
         return data;
     }
-
 (async function cargarPokemons() {
     const grid = document.getElementById('grid');
     const loading = document.getElementById('loading');
-
 
     try {
         for (let id = 1; id <= 10; id++) {
             const data = await obtenerPokemon(id);
             resultados.push(data);
     }
-
 
     resultados.forEach(p => {
         const card = document.createElement('div');
