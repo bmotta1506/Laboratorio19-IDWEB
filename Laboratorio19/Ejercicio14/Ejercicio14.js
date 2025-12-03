@@ -1,6 +1,5 @@
 let listaPokemon = [];
 let pagina = 0; 
-
 window.onload = async function () {
     for (let id = 1; id <= 12; id++) {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
