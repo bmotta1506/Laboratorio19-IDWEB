@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon 1-12</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background: #f1f5f9;
+                    padding: 20px;
+                    text-align: center;
+                }
+                #grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                    gap: 16px;
+                    max-width: 700px;
+                    margin: 20px auto;
+                }
+                .card {
+                    background: white;
+                    padding: 12px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                }
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+                button {
+                    padding: 10px 14px;
+                    margin: 10px;
+                    border: none;
+                    background: #2563eb;
+                    color: white;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+                button:disabled {
+                    background: #94a3b8;
+                    cursor: not-allowed;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Pokémon del 1 al 12</h1>
+            <div id="grid"></div>
+            <button id="btnAnterior" onclick="mostrarAnterior()" disabled>Anterior</button>
+            <button id="btnSiguiente" onclick="mostrarSiguiente()">Siguiente</button>
+            <script src="Ejercicio14.js"></script>
+        </body>
+    </html>

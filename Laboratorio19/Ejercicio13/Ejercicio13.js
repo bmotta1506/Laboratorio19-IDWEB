@@ -13,7 +13,6 @@ async function buscarStats() {
 
         const data = await res.json();
 
-        // Crear tabla de stats
         let tabla = `
             <h3>${data.name.toUpperCase()}</h3>
             <img src="${data.sprites.front_default}" alt="${data.name}">
