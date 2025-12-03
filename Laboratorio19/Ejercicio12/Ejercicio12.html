@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estadísticas de Pokémon</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2ff;
+            padding: 20px;
+        }
+
+        #container {
+            max-width: 380px;
+            margin: 0 auto;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 12px;
+            border: none;
+            background: #6366f1;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #4f46e5;
+        }
+
+        #resultado img {
+            width: 120px;
+            margin-top: 10px;
+        }
+
+        .stat {
+            background: #e0e7ff;
+            padding: 6px;
+            border-radius: 6px;
+            margin: 6px 0;
+            font-weight: bold;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div id="container">
+            <h2>Estadísticas Base</h2>
+
+            <input id="entrada" type="text" placeholder="Nombre o ID del Pokémon">
+            <button onclick="buscarStats()">Buscar</button>
+
+            <div id="resultado"></div>
+        </div>
+
+        <script src="Ejercicio12.js"></script>
+    </body>
+</html>
